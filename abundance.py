@@ -11,7 +11,9 @@ from scipy.stats import pearsonr
 import csv
 import glob
 import os
-
+import matplotlib.pyplot as plt
+import plotly.express as px
+import seaborn as sns
 # Define the directory containing the .tsv files
 directory = '/Users/haroun/Soladata/output_kaiju'  # Change this to your directory
 metadata=pd.read_csv('/Users/haroun/Soladata/SENTINEL_LASV_SEQ_SIJU_OA.csv', sep=",")
@@ -82,13 +84,7 @@ print(merged_df,'hello')
 
 merged_df.to_csv("/Users/haroun/Soladata/merged_df.csv", index=False)
 
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-import plotly.express as px
-#px.bar(melt, x='value', y='Time', color='variable', orientation='h', text='value')
 
-import seaborn as sns
 
 """
 #df=pd.read_csv('Downloads/bacterialcounts.csv',sep=',')
