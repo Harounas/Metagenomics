@@ -1,0 +1,1 @@
+miniwdl run /home/harouna/viral-pipelines/pipes/WDL/workflows/demux_only.wdl illumina_demux.flowcell_tgz=./240705_VH00635_32_AACK27LHV.tar.gz illumina_demux.samplesheet=./SampleSheet3.tsv illumina_demux.sequencingCenter="ACEGID"
