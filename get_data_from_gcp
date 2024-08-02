@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Define the destination path
+DEST_PATH="."
+
+# Loop through shard numbers
+for i in {1..84}; do
+    # Copy files from Google Cloud Storage to the local destination path
+    gsutil -m cp gs://fc-4c30de77-e5cd-41be-af08-e01aa0c77280/submissions/8a499cab-af46-448c-81ae-fe843f2aac66/demux_deplete/c8cd05f6-383f-4ac8-8dc0-d9d04f4efc1e/call-deplete/shard-$i/*.cleaned.bam "$DES>
+done
